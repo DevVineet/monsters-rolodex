@@ -19,9 +19,8 @@ class App extends Component {
     .catch(err=>console.error(err))
   }
 
-  handleChange(e) {
-    console.log("134")
-    // this.setState({searchField:e.target.value})
+  handleChange = (e) => {
+    this.setState({searchField:e.target.value})
   }
 
   render() {
@@ -31,7 +30,7 @@ class App extends Component {
         <h1>Monsters Rolodex</h1>
         <SearchBox 
           placeholder='search monsters'
-          onChangeHandler={this.handleChange()} 
+          onChangeHandler={this.handleChange} 
         />
         <CardList monsters={monsters.filter(monster=>monster.name.toLowerCase().includes(searchField.toLowerCase()))}/>
       </div>
