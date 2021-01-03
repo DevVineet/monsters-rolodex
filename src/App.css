@@ -1,3 +1,11 @@
+*,
+*:after,
+*:before{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
   padding: 20px;
@@ -7,4 +15,8 @@ h1 {
   font-family: 'Bigelow Rules';
   font-size: 72px;
   color: #0ccac4;
+}
+
+img{
+  width: 100%;
 }
